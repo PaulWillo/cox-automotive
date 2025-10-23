@@ -47,8 +47,6 @@ const VehicleList = () => {
       <Typography variant="h4" gutterBottom>
         Vehicle Dashboard
       </Typography>
-
-      {/* Sort controls */}
       <Box display="flex" gap={2} mb={3}>
         <FormControl>
           <InputLabel>Sort By</InputLabel>
@@ -77,8 +75,6 @@ const VehicleList = () => {
           </Select>
         </FormControl>
       </Box>
-
-      {/* Vehicle list */}
       <Grid container spacing={2}>
         {sortedVehicles.map((v) => (
           <Grid item xs={12} sm={6} md={4} key={v.id}>
